@@ -365,6 +365,21 @@ resources:
     seed:
       versionName: "latest"
 
+
+# common input test
+
+  - name: common-in
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+    flags:
+      - common-test
+
+
 # orphan resources
 
 

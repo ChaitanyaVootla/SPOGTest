@@ -1351,3 +1351,179 @@ jobs:
      - IN: image9-level-4
      - IN: image10-level-4
      - TASK: managed
+
+# common test manifests
+
+  - name: common-out-1
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-2
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-3
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-4
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-5
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-6
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-7
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-8
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-9
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-10
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-11
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-12
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-13
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-14
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-15
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-16
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-17
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-18
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-19
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-20
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-21
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-22
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-23
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-24
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-25
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-26
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-27
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-28
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
+
+  - name: common-out-29
+    type: manifest
+    steps:
+     - IN: common-in
+     - TASK: managed
