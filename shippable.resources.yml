@@ -364,3 +364,989 @@ resources:
       isPull: false
     seed:
       versionName: "latest"
+
+# orphan resources
+
+
+  - name: orphan-1
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-2
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-3
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-4
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-5
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-6
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-7
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-8
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-9
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+
+  - name: orphan-10
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-11
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-12
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-13
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-14
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-15
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-16
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-17
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-18
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+
+  - name: orphan-19
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-20
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-21
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-22
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-23
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-24
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-25
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-26
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-27
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+
+  - name: orphan-28
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-29
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-30
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-31
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-32
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-33
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-34
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-35
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-36
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+
+  - name: orphan-37
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-38
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-39
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-40
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-41
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-42
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-43
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-44
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-45
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+
+  - name: orphan-46
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-47
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-48
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-49
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-50
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-51
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-52
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-53
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-54
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+
+  - name: orphan-55
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-56
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-57
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-58
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-59
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-60
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-61
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-62
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-63
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+
+  - name: orphan-64
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-65
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-66
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-67
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-68
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-69
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-70
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-71
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-72
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+
+  - name: orphan-73
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-74
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-75
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-76
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-77
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-78
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-79
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-80
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-81
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+
+  - name: orphan-82
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-83
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-84
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-85
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-86
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-87
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-88
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-89
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-90
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+
+  - name: orphan-91
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-92
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-93
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-94
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-95
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-96
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-97
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-98
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-99
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+
+  - name: orphan-100
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-101
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-102
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-103
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-104
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-105
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-106
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-107
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+  - name: orphan-108
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "test"
+      isPull: false
+    seed:
+      versionName: "latest"
