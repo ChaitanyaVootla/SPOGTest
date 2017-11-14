@@ -1,0 +1,1257 @@
+jobs:
+  - name: pipelines-demo-manifest
+    type: manifest
+    steps:
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+    on_success:
+     - NOTIFY: irc
+
+  - name: pipelines-demo-manifest-2
+    type: manifest
+    steps:
+     - IN: deploy-pipelines-demo
+     - TASK: managed
+        
+     - NOTIFY: irc
+
+
+  - name: pipelines-demo-manifest-3
+    type: manifest
+    steps:
+     - IN: deploy-pipelines-demo
+     - TASK: managed
+
+
+  - name: pipelines-demo-manifest-42
+    type: manifest
+    steps:
+     - IN: deploy-pipelines-demo
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-25
+    type: manifest
+    steps:
+     - IN: deploy-pipelines-demo
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-21
+    type: manifest
+    steps:
+     - IN: deploy-pipelines-demo
+     - TASK: managed
+ 
+
+  - name: pipelines-demo-manifest-3312
+    type: manifest
+    steps:
+     - IN: deploy-pipelines-demo
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-4232
+    type: manifest
+    steps:
+     - IN: deploy-pipelines-demo
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-25222
+    type: manifest
+    steps:
+     - IN: deploy-pipelines-demo
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-21333
+    type: manifest
+    steps:
+     - IN: deploy-pipelines-demo
+     - TASK: managed
+  - name: deploy-pipelines-demo
+    type: deploy
+    flags:
+      - job-flag
+    steps:
+      - IN: pipelines-demo-manifest
+      - IN: docker-options
+      - IN: ecs-cluster
+      - IN: replicas
+      - TASK: managed
+        deployMethod: upgrade
+
+  - name: runSh
+    type: runSh
+    allowPublicAccess: true
+    steps:
+      - IN: pipelines-demo-manifest
+      - TASK:
+        - script: echo 'This block executes when the TASK starts'
+        - script: echo "versionName=satble" >> $JOB_STATE/runSh.env;
+
+
+  - name: runSh3
+    type: runSh
+    steps:
+      - IN: deploy-pipelines-demo
+      - OUT: image-manifest-test-17
+      - TASK:
+        - script: echo 'This block executes when the TASK starts'
+        - script: echo "versionName=satble" >> $JOB_STATE/runSh3.env;
+
+
+  - name: pipelines-demo-manifest-2asdd
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+        
+     - NOTIFY: irc
+
+  - name: pipelines-demo-manifest-3dddd
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-42sddd
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-25sddd
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-21asaa
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+ 
+
+  - name: pipelines-demo-manifest-3312as
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-4232as
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-25222d
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-21333as
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+     
+
+  - name: pipelines-demo-manifest-2as
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+        
+     - NOTIFY: irc
+
+  - name: pipelines-demo-manifest-3dd
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-42sd
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-25sd
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-21as
+    type: manifest
+    steps:
+     - IN: runSh3
+     - TASK: managed
+ 
+
+  - name: pipelines-demo-manifest-33s12as
+    type: manifest
+    steps:
+     - IN: runSh
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-4232ssas
+    type: manifest
+    steps:
+     - IN: runSh
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-25ddas222d
+    type: manifest
+    steps:
+     - IN: runSh
+     - TASK: managed
+
+  - name: pipelines-demo-manifest-21s33as
+    type: manifest
+    steps:
+     - IN: runSh
+     - TASK: managed
+
+
+# new
+
+
+  - name: newManifesta
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest
+     - TASK: managed
+
+  - name: newManifestb
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest
+     - TASK: managed
+
+  - name: newManifestc
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest
+     - TASK: managed
+
+  - name: newManifests
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest
+     - TASK: managed
+
+  - name: newManifestddd
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest
+     - TASK: managed
+
+  - name: newManifestafa
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest
+     - TASK: managed
+
+  - name: newManifestsssd
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest
+     - TASK: managed
+
+  - name: newManifestadaas
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest
+     - TASK: managed
+
+# new2
+
+
+  - name: newManifest2
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest-21as
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - IN: runSh3
+     - TASK: managed
+    flags:
+      - newManifest2
+
+  - name: newManifest23
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest-21as
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+  - name: newManifest3
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest-21as
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+  - name: newManifest232
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest-21as
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+  - name: newManifest2s
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest-21as
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+  - name: newManifestwds
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest-21as
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+  - name: newManifestasdw
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest-21as
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+  - name: newManifestaa
+    type: manifest
+    steps:
+     - IN: pipelines-demo-manifest-21as
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+# new3
+
+
+  - name: newManifest2xzx
+    type: manifest
+    steps:
+     - IN: newManifestc
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+  - name: newManifest23cczx
+    type: manifest
+    steps:
+     - IN: newManifestc
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+  - name: newManifest3bb
+    type: manifest
+    steps:
+     - IN: newManifestc
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+  - name: newManifest232zxx
+    type: manifest
+    steps:
+     - IN: newManifestc
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+  - name: newManifest2sw
+    type: manifest
+    steps:
+     - IN: newManifestc
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+  - name: newManifestwdsasd
+    type: manifest
+    steps:
+     - IN: newManifestc
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+  - name: newManifestasdwwe
+    type: manifest
+    steps:
+     - IN: newManifestc
+     - TASK: managed
+
+  - name: newManifestaaa22
+    type: manifest
+    steps:
+     - IN: newManifestc
+     - IN: pipelines-demo-image
+     - IN: pipelines-demo-image2
+     - IN: pipelines-demo-image3
+     - IN: pipelines-demo-image4
+     - IN: pipelines-demo-image5
+     - TASK: managed
+
+
+
+
+
+  - name: new-flag-test
+    type: manifest
+    flags:
+      - job-flag
+      - test
+    steps:
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - IN: my-state
+ 
+
+  - name: new-flag-test-2
+    type: manifest
+    steps:
+     - IN: new-flag-test
+     - TASK: managed
+     - OUT: my-state
+ 
+
+  - name: new-flag-test-3
+    type: manifest
+    steps:
+     - IN: new-flag-test-2
+     - TASK: managed
+     - OUT: my-state
+ 
+
+  - name: new-flag-test-4
+    type: manifest
+    steps:
+     - IN: new-flag-test-3
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - OUT: my-state
+
+ #test-outs
+ 
+
+  - name: new-flag-test-5
+    type: manifest
+    steps:
+     - IN: new-flag-test-4
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-6
+    type: manifest
+    steps:
+     - IN: new-flag-test-4
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - OUT: my-state
+ 
+
+  - name: new-flag-test-7
+    type: manifest
+    steps:
+     - IN: new-flag-test-4
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - OUT: my-state
+ 
+
+  - name: new-flag-test-8
+    type: manifest
+    steps:
+     - IN: new-flag-test-4
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - OUT: my-state
+ 
+
+  - name: new-flag-test-9
+    type: manifest
+    steps:
+     - IN: new-flag-test-4
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - OUT: my-state
+ 
+
+  - name: new-flag-test-50
+    type: manifest
+    steps:
+     - IN: new-flag-test-4
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - OUT: my-state
+ 
+
+  - name: new-flag-test-10
+    type: manifest
+    steps:
+     - IN: new-flag-test-4
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - OUT: my-state
+ 
+
+  - name: new-flag-test-11
+    type: manifest
+    steps:
+     - IN: new-flag-test-4
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - OUT: my-state
+ 
+
+  - name: new-flag-test-12
+    type: manifest
+    steps:
+     - IN: new-flag-test-4
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - OUT: my-state
+ 
+
+  - name: new-flag-test-13
+    type: manifest
+    steps:
+     - IN: new-flag-test-4
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - OUT: my-state
+ 
+
+  - name: new-flag-test-14
+    type: manifest
+    steps:
+     - IN: new-flag-test-4
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - OUT: my-state
+ 
+
+  - name: new-flag-test-15
+    type: manifest
+    steps:
+     - IN: new-flag-test-4
+     - IN: pipelines-flag-test-image
+     - TASK: managed
+     - OUT: my-state
+ 
+
+  - name: new-flag-test-out2-1
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-11
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-12
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-13
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-14
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-15
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-16
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-17
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-18
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-19
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-10
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-111
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-122
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-133
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-144
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-155
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-166
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-177
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-188
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-199
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-1123
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-1234
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-345
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: new-flag-test-out2-1456
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+
+#image-in-test-block
+  - name: image-manifest-test-10
+    type: manifest
+    steps:
+     - IN: manifest-test-image-14
+     - IN: manifest-test-image-15
+     - TASK: managed
+
+  - name: image-manifest-test-11
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-1
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-12
+    type: manifest
+    steps:
+     - IN: manifest-test-image-13
+     - IN: manifest-test-image-14
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-13
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-14
+    type: manifest
+    steps:
+     - IN: manifest-test-image-9
+     - IN: manifest-test-image-11
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-15
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-1
+     - IN: manifest-test-image-9
+     - TASK: managed
+     
+  - name: image-manifest-test-16
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-1
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-17
+    type: manifest
+    steps:
+     - IN: manifest-test-image-4
+     - IN: manifest-test-image-5
+     - IN: manifest-test-image-9
+     - IN: manifest-test-image-15
+     - IN: newManifest2
+     - IN: runSh3
+     - TASK: managed
+     
+  - name: image-manifest-test-18
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-9
+     - IN: manifest-test-image-10
+     - IN: manifest-test-image-11
+     - TASK: managed
+     
+  - name: image-manifest-test-19
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-1
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-20
+    type: manifest
+    steps:
+     - IN: manifest-test-image-11
+     - IN: manifest-test-image-12
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-21
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-13
+     - IN: manifest-test-image-14
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-22
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-1
+     - IN: manifest-test-image-13
+     - IN: manifest-test-image-14
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-23
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-1
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-24
+    type: manifest
+    steps:
+     - IN: manifest-test-image-11
+     - IN: manifest-test-image-12
+     - IN: manifest-test-image-13
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-25
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-1
+     - TASK: managed
+     
+  - name: image-manifest-test-26
+    type: manifest
+    steps:
+     - IN: manifest-test-image-12
+     - IN: manifest-test-image-13
+     - IN: manifest-test-image-14
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-27
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-1
+     - IN: manifest-test-image-3
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-28
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-14
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-29
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-1
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-30
+    type: manifest
+    steps:
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-31
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-1
+     - IN: manifest-test-image-2
+     - IN: manifest-test-image-3
+     - TASK: managed
+     
+  - name: image-manifest-test-32
+    type: manifest
+    steps:
+     - IN: manifest-test-image-10
+     - IN: manifest-test-image-14
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-33
+    type: manifest
+    steps:
+     - IN: manifest-test-image-13
+     - IN: manifest-test-image-14
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-34
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-13
+     - IN: manifest-test-image-15
+     - TASK: managed
+     
+  - name: image-manifest-test-35
+    type: manifest
+    steps:
+     - TASK: managed
+     
+  - name: image-manifest-test-36
+    type: manifest
+    steps:
+     - IN: manifest-test-image
+     - IN: manifest-test-image-1
+     - IN: manifest-test-image-4
+     - TASK: managed
+
+     #row 2
+
+ 
+
+  - name: image-manifest-test-out2-1234
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-100
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-199
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-188
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-177
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-166
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-155
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-144
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-133
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-122
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-111
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-19
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-18
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-17
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-16
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-15
+    type: manifest
+    steps:
+     - IN: new-flag-test-50
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-14
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-13
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-12
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+  - name: image-manifest-test-out2-11
+    type: manifest
+    steps:
+     - IN: image-manifest-test-11
+     - IN: image-manifest-test-13
+     - IN: image-manifest-test-15
+     - IN: image-manifest-test-19
+     - IN: image-manifest-test-18
+     - TASK: managed
+     - OUT: my-state
+
+ #res-test
+
+  - name: res-test-manifest-1
+    type: manifest
+    steps:
+     - IN: res-test
+     - TASK: managed
+
+  - name: res-test-manifest-2
+    type: manifest
+    steps:
+     - IN: res-test-replicas
+     - IN: res-test-manifest-1
+     - TASK: managed
+
+  - name: res-test-manifest-3
+    type: manifest
+    steps:
+     - IN: res-test
+     - IN: res-test-manifest-2
+     - TASK: managed
+
+  - name: res-test-manifest-4
+    type: manifest
+    steps:
+     - IN: res-test-docker-options
+     - IN: res-test-manifest-3
+     - TASK: managed
+
+  - name: res-test-manifest-5
+    type: manifest
+    steps:
+     - IN: res-test-ecs-cluster
+     - IN: res-test-manifest-4
+     - TASK: managed
+
+  #mini-test
+
+  - name: mini-test-manifest
+    type: manifest
+    steps:
+     - IN: mini-test-image
+
+  - name: mini-test-manifest-2
+    type: manifest
+    steps:
+     - IN: mini-test-manifest
+    flags:
+      - mini-test
