@@ -1256,3 +1256,98 @@ jobs:
     flags:
       - mini-test
 
+
+
+# SPOGTest new
+
+  - name: manifest1-level-1
+    type: manifest
+    steps:
+     - IN: image1-level-0
+     - IN: image2-level-0
+     - IN: image3-level-0
+     - IN: image4-level-0
+     - TASK: managed
+
+  - name: manifest2-level-1
+    type: manifest
+    steps:
+     - IN: image1-level-0
+     - IN: image2-level-0
+     - IN: image3-level-0
+     - IN: image4-level-0
+     - TASK: managed
+
+  - name: manifest3-level-1
+    type: manifest
+    steps:
+     - IN: image1-level-0
+     - IN: image2-level-0
+     - IN: image3-level-0
+     - IN: image4-level-0
+     - TASK: managed
+
+  - name: manifest4-level-1
+    type: manifest
+    steps:
+     - IN: image1-level-0
+     - IN: image2-level-0
+     - IN: image3-level-0
+     - IN: image4-level-0
+     - TASK: managed
+
+
+
+
+  - name: manifest5-level-3
+    type: manifest
+    steps:
+     - IN: image5-level-2
+     - IN: image6-level-2
+     - IN: image7-level-2
+     - IN: image8-level-2
+     - TASK: managed
+
+  - name: manifest6-level-3
+    type: manifest
+    steps:
+     - IN: image5-level-2
+     - IN: image6-level-2
+     - IN: image7-level-2
+     - IN: image8-level-2
+     - TASK: managed
+
+  - name: manifest7-level-3
+    type: manifest
+    steps:
+     - IN: image5-level-2
+     - IN: image6-level-2
+     - IN: image7-level-2
+     - IN: image8-level-2
+     - TASK: managed
+
+  - name: manifest8-level-3
+    type: manifest
+    steps:
+     - IN: image5-level-2
+     - IN: image6-level-2
+     - IN: image7-level-2
+     - IN: image8-level-2
+     - TASK: managed
+
+
+
+
+  - name: manifest9-level-5
+    type: manifest
+    steps:
+     - IN: image9-level-4
+     - IN: image10-level-4
+     - TASK: managed
+
+  - name: manifest10-level-5
+    type: manifest
+    steps:
+     - IN: image9-level-4
+     - IN: image10-level-4
+     - TASK: managed
