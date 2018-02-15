@@ -1282,7 +1282,9 @@ jobs:
     type: manifest
     steps:
      - IN: image1-level-0
+       switch: off
      - IN: image2-level-0
+       switch: off
      - IN: image3-level-0
      - IN: image4-level-0
      - TASK: managed
